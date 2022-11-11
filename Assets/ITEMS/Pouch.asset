@@ -1,0 +1,33 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 63847953906de0943b1a8ac8aca51a8d, type: 3}
+  m_Name: Pouch
+  m_EditorClassIdentifier: 
+  sprite: {fileID: 21300000, guid: e9fd999c3724e5d4c84e3627eac2bd63, type: 3}
+  id: Pouch
+  description: 
+  width: 3
+  height: 3
+  foldedWidth: 3
+  foldedHeight: 2
+  folded: 0
+  itemGrid:
+    width: 3
+    height: 3
+    position: {x: -300, y: 350}
+    slots:
+    - item: {fileID: 11400000, guid: e4eac1785f0d92c4693213ebd8671768, type: 2}
+      i: 3
+      rotated: 0
+    - item: {fileID: 11400000, guid: a000c9d88d395b84db539cce975b8d27, type: 2}
+      i: 6
+      rotated: 0

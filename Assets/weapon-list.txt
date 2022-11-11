@@ -1,0 +1,34 @@
+PISTOLS:
+US M9 9x19mm
+US Glock17 9x19mm
+
+
+SUBMACHINE GUNS:
+DE MP5 9x19mm
+DE MP7 4.6x30mm
+
+
+MACHINE GUNS:
+US M240 7.62x51mm
+US M2A1 12.7x99mm
+
+
+ASSAULT RIFLES:
+US M4A1 5.56x45mm
+DE HK416 5.56x45mm
+
+
+SNIPER RIFLES:
+DE Karabiner98k 7.92x57mm
+US Mk20SSR 7.62x51mm
+DE PSG-1 7.62x51mm
+
+
+GRENADES:
+DE DM51
+US M67
+US M84
+
+
+Maybe later:
+Wehicles and anti-materiel weapons
