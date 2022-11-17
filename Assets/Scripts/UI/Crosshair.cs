@@ -7,6 +7,8 @@ public class Crosshair : MonoBehaviour
 {
     public Vector2 position;
 
+    public float sensitivity = 4;
+
     public float spread = 1;
 
     [Header("Visuals")]
@@ -26,8 +28,8 @@ public class Crosshair : MonoBehaviour
 
     void UpdatePosition()
     {
-        position.x += Input.GetAxis("Mouse X");
-        position.y += Input.GetAxis("Mouse Y");
+        position.x += sensitivity * Input.GetAxis("Mouse X");
+        position.y += sensitivity * Input.GetAxis("Mouse Y");
     }
 
     void UpdateVisuals()

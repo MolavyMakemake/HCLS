@@ -7,10 +7,14 @@ public class Look : MonoBehaviour
     public UI ui;
     public Crosshair crosshair;
 
+    public Sprite3D sprite;
+
     public LineRenderer debug;
 
     public Vector3 target;
     public Vector3 normal;
+
+    public float theta;
 
     void OnHoveringObject(Transform hit)
     {
@@ -24,7 +28,9 @@ public class Look : MonoBehaviour
         // This vector shouldnt change and can be changed to a const
         Vector3 cNormal = Camera.main.transform.forward;
 
-        target = Camera.main.ScreenToWorldPoint((Vector3)crosshair.position + cNormal);
+        Vector3 position = crosshair == null ? Input.mousePosition : crosshair.position;
+
+        target = Camera.main.ScreenToWorldPoint(position + cNormal);
 
         RaycastHit hit;
         if (Physics.Raycast(target, cNormal, out hit))
@@ -41,13 +47,18 @@ public class Look : MonoBehaviour
         ReadInput();
 
         Vector3 position = transform.position;
-        position.y = 1;
+        position.y = target.y;
 
         normal = (target - position).normalized;
 
-        debug.SetPosition(0, position);
-        debug.SetPosition(1, target);
+        if (debug != null)
+        {
+            debug.SetPosition(0, position);
+            debug.SetPosition(1, target);
+        }
 
-        transform.rotation = Quaternion.Euler(0, -Mathf.Rad2Deg * Mathf.Atan2(normal.z, normal.x), 0);
+        theta = Mathf.Atan2(normal.z, normal.x);
+        if (sprite != null)
+            sprite.rotY = Mathf.Rad2Deg * theta;
     }
 }

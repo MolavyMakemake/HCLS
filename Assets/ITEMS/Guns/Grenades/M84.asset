@@ -1,0 +1,19 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 81d6ba64e9ac6f5428e3358b28d75794, type: 3}
+  m_Name: M84
+  m_EditorClassIdentifier: 
+  sprite: {fileID: -1357363862, guid: 1c4ff8bc1b053c7499522d414c1fcf5c, type: 3}
+  id: M84
+  description: 
+  width: 1
+  height: 1

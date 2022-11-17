@@ -21,8 +21,8 @@ MonoBehaviour:
   foldedHeight: 2
   folded: 0
   itemGrid:
-    width: 3
-    height: 3
+    width: 30
+    height: 30
     position: {x: -300, y: 350}
     slots:
     - item: {fileID: 11400000, guid: e4eac1785f0d92c4693213ebd8671768, type: 2}
